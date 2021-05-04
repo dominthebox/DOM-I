@@ -73,6 +73,19 @@ button.textContent = siteContent["cta"]["button"];
 const wideImg = document.getElementById("middle-img");
 wideImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+// Contact Section
+
+const contactTitle = document.querySelector('.contact h4');
+contactTitle.textContent = siteContent["contact"]["contact-h4"];
+
+const contactInfo = document.querySelectorAll('.contact p');
+contactInfo[0].textContent = siteContent["contact"]["address"];
+contactInfo[1].textContent = siteContent["contact"]["phone"];
+contactInfo[2].textContent = siteContent["contact"]["email"];
+
+
+
 //Footer Content
 
-
+const footerCopyright = document.querySelector('footer');
+footerCopyright.textContent = siteContent["footer"]["copyright"];
