@@ -67,11 +67,31 @@ button.textContent = siteContent["cta"]["button"];
 
 // Main Content Section
 
-// const topContent = document.getElementsByClassName("top-content", "text-content");
-// topContent.setAttribute(siteContent["main-content"]["features-h4"]);
+// const mainContent = document.querySelector(".main-content");
+// const topContent = mainContent.querySelector(".top-content");
+// const topContentDiv = topContent.querySelector("div");
+
+// topContentDiv[0].querySelector("h4").textContent = siteContent["main-content"]["features-h4"];
+// topContentDiv[0].querySelector("p").textContent = siteContent["main-content"]["features-content"];
+
+// topContentDiv[1].querySelector("h4").textContent = siteContent["main-content"]["about-h4"];
+// topContentDiv[1].querySelector("p").textContent = siteContent["main-content"]["about-content"];
+
 
 const wideImg = document.getElementById("middle-img");
 wideImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// const bottomContent = mainContent.querySelector(".bottom-content");
+// const bottomContentDiv = bottomContent.querySelector("div");
+
+// bottomContentDiv[0].querySelector("h4").textContent = siteContent["main-content"]["services-h4"];
+// bottomContentDiv[0].querySelector("p").textContent = siteContent["main-content"]["services-h4"];
+
+// bottomContentDiv[1].querySelector("h4").textContent = siteContent["main-content"]["product-h4"];
+// bottomContentDiv[1].querySelector("p").textContent = siteContent["main-content"]["product-content"];
+
+// bottomContentDiv[2].querySelector("h4").textContent = siteContent["main-content"]["vision-h4"];
+// bottomContentDiv[2].querySelector("p").textContent = siteContent["main-content"]["vision-content"];
 
 // Contact Section
 
@@ -82,8 +102,6 @@ const contactInfo = document.querySelectorAll('.contact p');
 contactInfo[0].textContent = siteContent["contact"]["address"];
 contactInfo[1].textContent = siteContent["contact"]["phone"];
 contactInfo[2].textContent = siteContent["contact"]["email"];
-
-
 
 //Footer Content
 
